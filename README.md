@@ -74,6 +74,6 @@ gcc mymv.c -o mymv
 ```
 ### Example Output : 
 ```bash
-$ ./mymv file.txt destination directory
+$ ./mymv file.txt destination_directory
 File successfully moved from current directory to destination directory
 ```

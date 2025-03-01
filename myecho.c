@@ -14,21 +14,21 @@ int main(int argc, char *argv[]) {
 
 	/* Writing the given String */
         if (write(STDOUT_FILENO, argv[i], strlen(argv[i])) < 0) {
-            printf("Couldn't write\n");
+            printf("Error : Couldn't write\n");
             exit(EXIT_FAILURE);
         }
 
 	/*Writing Space between the strings*/
 
 	if(write(STDOUT_FILENO , " " , 1) < 0){
-		printf("Couldn't write space \n");
+		printf("Error : Couldn't write space \n");
 		exit(EXIT_FAILURE);
 	}
     }
 
     /* Writing Newline */
     if (write(STDOUT_FILENO, "\n", 1) < 0) {
-        printf("Couldn't write new line \n");
+        printf("Error : Couldn't write new line \n");
         exit(EXIT_FAILURE);
     }
 

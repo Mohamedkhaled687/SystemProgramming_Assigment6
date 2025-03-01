@@ -14,7 +14,7 @@ int main(int argc , char * argv[]){
 	/* Ensure the correct Usage */
 
 	if(argc != 3){
-		printf("Usage : %s (first file) (second file)\n" , argv[0]);
+		printf("Usage : %s <Input file> <Output file>\n" , argv[0]);
 		exit(EXIT_FAILURE);
 	}
 

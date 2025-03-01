@@ -24,7 +24,7 @@ int main(int argc , char * argv[]){
 	}
 
 	/* Write the following current working directory */
-	if(write(1 , buf  , strlen(buf) ) < 0){
+	if(write(STDOUT_FILENO , buf  , strlen(buf) ) < 0){
 		printf("Error : Couldn't write \n");
 		exit(EXIT_FAILURE);
 	}

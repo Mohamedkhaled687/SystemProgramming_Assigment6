@@ -12,14 +12,12 @@ int main(int argc , char * argv[]){
 	int Fd_Input , Fd_Output , num_read;
 
 	/* Ensure the correct Usage */
-
 	if(argc != 3){
 		printf("Usage : %s <Input file> <Output file>\n" , argv[0]);
 		exit(EXIT_FAILURE);
 	}
 
 	/* Open the input file */
-
 	Fd_Input = open(argv[1] , O_RDONLY);
 
 	if(Fd_Input == -1){
@@ -27,9 +25,8 @@ int main(int argc , char * argv[]){
 		exit(EXIT_FAILURE);
 	}
 
-	Fd_Output = open(argv[2] , O_CREAT | O_WRONLY | O_TRUNC , 0644);
-
 	/* Open the output file */
+	Fd_Output = open(argv[2] , O_CREAT | O_WRONLY | O_TRUNC , 0644);
 
 	if(Fd_Output == -1){
 		printf("Error : Couldn't Open the output file \n");
@@ -37,7 +34,6 @@ int main(int argc , char * argv[]){
 	}
 
 	/* Reading the input file */
-
 	while((num_read = read(Fd_Input , buf , BUF_SIZE)) > 0){
 
 		/* Writing to the Output file */
@@ -54,18 +50,17 @@ int main(int argc , char * argv[]){
 	}
 
 	/* Closing Input file */
-
 	if(close(Fd_Input) < 0){
 		printf("Error : Couldn't close the Input file \n");
 		exit(EXIT_FAILURE);
 	}
 
 	/* Closing Output file */
-
 	if(close(Fd_Output) < 0){
 		printf("Error : Couldn't close the Output file \n");
 		exit(EXIT_FAILURE);
 	}
+
 
 	exit(EXIT_SUCCESS);
 }

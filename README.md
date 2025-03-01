@@ -4,13 +4,12 @@ This repository contains custom implementations of common Unix utilities written
 
 ## Programs Included
 
-### 1. mypwd.c
+## 1. mypwd.c
+○ A simplified implementation of the `pwd` (print working directory) command.
 
-A simplified implementation of the `pwd` (print working directory) command.
-
-#### Compilation:
+### Compilation:
 ```bash
-gcc -o mypwd mypwd.c
+gcc -o mypwd mypwd.
 ```
 
 ### Usage : 
@@ -22,4 +21,22 @@ gcc -o mypwd mypwd.c
 ### Example Output : 
 ```bash
 Current working directory: /home/user/unix-utils
+```
+
+
+## 2. echo.c
+○ A simplified implementation of the echo command that displays text.
+
+### Compilation:
+```bash
+gcc -o myecho myecho.c
+```
+
+### Usage : 
+``` bash
+./echo "Hello World"
+```
+### Example Output : 
+```bash
+Hello World
 ```

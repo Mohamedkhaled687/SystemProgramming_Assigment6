@@ -70,8 +70,7 @@ gcc mymv.c -o mymv
 ```
 ### Usage : 
 ``` bash
-./mymv source_file destination_file
-
+./mymv file destination_directory
 ```
 ### Example Output : 
 ```bash

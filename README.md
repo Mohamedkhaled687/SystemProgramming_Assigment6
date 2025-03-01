@@ -9,7 +9,7 @@ This repository contains custom implementations of common Unix utilities written
 
 ### Compilation:
 ```bash
-gcc -o mypwd mypwd.
+gcc mypwd.c -o mypwd.
 ```
 
 ### Usage : 
@@ -29,7 +29,7 @@ Current working directory: /home/user/unix-utils
 
 ### Compilation:
 ```bash
-gcc -o myecho myecho.c
+gcc myecho.c -o myecho
 ```
 
 ### Usage : 
@@ -38,5 +38,43 @@ gcc -o myecho myecho.c
 ```
 ### Example Output : 
 ```bash
+$ ./myecho Hello World
 Hello World
+```
+
+## 3. copy.c
+○ A simplified implementation for copying files (similar to cp).
+
+### Compilation:
+```bash
+gcc mycopy.c -o mycopy
+```
+### Usage : 
+``` bash
+./copy source_file destination_file
+```
+
+### Example Output : 
+```bash
+$ ./mycopy file1.txt file2.txt
+File successfully copied from file1.txt to file2.txt
+```
+
+
+## 4. mv.c
+○ A simplified implementation for moving or renaming files (similar to mv).
+
+### Compilation:
+```bash
+gcc mymv.c -o mymv
+```
+### Usage : 
+``` bash
+./mymv source_file destination_file
+
+```
+### Example Output : 
+```bash
+$ ./mymv file.txt destination directory
+File successfully moved from current directory to destination directory
 ```
